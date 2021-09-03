@@ -41,6 +41,7 @@ def main():
         CLIENT["device_model"],
         CLIENT["app_version"],
         CLIENT["enable_storage_optimizer"],
+        CLIENT["group_messages"],
     )
 
     # init the client with your api id and api hash
@@ -48,13 +49,13 @@ def main():
 
     # build the forwarder object
     forwarder = Forwarder(
+        client,
         FORWARDER["limit_chats"],
         FORWARDER["periodicity_fwd"],
-        FORWARDER["log_path"],
         FORWARDER["rules_path"],
-        client,
+        FORWARDER["log_path"],
     )
-    logger.debug(f"Forwarder object: {forwarder}")
+    logger.debug(f"Forwarder: {forwarder}")
 
     # start the forwarder
     forwarder.start()

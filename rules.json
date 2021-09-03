@@ -1,12 +1,14 @@
 {
-  "forward": [
-    {
-      "id": "Rule 1",
-      "source": -1001234567890,
-      "destination": [1234567890],
-      "options": {},
-      "send_copy": true,
-      "remove_caption": false
-    }
-  ]
+    "forward": [
+        {
+            "id": "Rule 1",
+            "source": -1001177564782,
+            "destination": [
+                1290465627
+            ],
+            "options": {},
+            "send_copy": true,
+            "remove_caption": false
+        }
+    ]
 }

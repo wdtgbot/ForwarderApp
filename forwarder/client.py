@@ -18,6 +18,7 @@ class Client:
         device_model,
         app_version,
         enable_storage_optimizer,
+        group_messages,
     ) -> None:
         # initial parameters
         self.use_test_dc = use_test_dc
@@ -30,6 +31,7 @@ class Client:
         self.device_model = device_model
         self.app_version = app_version
         self.enable_storage_optimizer = enable_storage_optimizer
+        self.group_messages = group_messages
 
         # load shared library
         tdjson = CDLL(self.tdlib_path)
